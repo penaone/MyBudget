@@ -3,10 +3,27 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Create a Budget</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 
 <body>
+  <div id="container">
+    <div id="incomeContainer">
+      <div id="nameDiv" class="input">Name: <input id="name" type="text"
+      placeholder="Income"/></div>
+      <div id="amountDiv" class="input">Amount: <input id="name" type="text"
+      placeholder="Expense"/></div>
+    </div>
+    <div id="expenseContainer">
+      <div id="nameDiv" class="input">Name: <input id="name" type="text"
+        placeholder="Expense"/></div>
+        <div id="amountDiv" class="input">Amount: <input id="name" type="text"
+          placeholder="Expense"/></div>
+    </div>
+    
+  </div>
   
     <caption><b><h1>My Budget</h1></b></caption>
     <iframe src="https://www.youtube.com/embed/4Eh8QLcB1UQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" poster="thumbnail.jpg" allowfullscreen></iframe>
@@ -21,8 +38,8 @@
     <td> Income </td></tr>
     <tr>
       <td></td>    
-    <td><input type="text"/></td>
-    <td><input type = "decimal"></td>
+    <td><input type="text" placeholder="Income source"/></td>
+    <td><input type = "decimal" placeholder="Amount"></td>
          
     </tr>
 
@@ -31,16 +48,17 @@
     </tr>
     <tr>
       <td></td>
-      <td><input type="text" /></td>
-      <td><input type ="decimal" /></td>
+      <td><input type="text" id="expense" placeholder="Expense" /></td>
+      <td><input type ="decimal" placeholder="Amount Monthly"/></td>
     </tr>
     <tr>
       <td></td>
-      <td><input type="text" /></td>
+      <td><input id="text" type="text" /></td>
       <td><input type ="decimal" /></td>
     </tr>
   </table>
   
 </body>
+<script src="form.js"></script>
 
 </html>
