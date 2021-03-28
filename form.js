@@ -22,6 +22,7 @@ function displayDetails1(){
   var cell2 = newRow.insertCell(1);
   var cell3 = newRow.insertCell(2);
   var cell4 = newRow.insertCell(3);
+  
   cell1.innerHTML = iname;
   cell2.innerHTML = iamount;
   cell3.innerHTML = iactual;
@@ -29,6 +30,14 @@ function displayDetails1(){
 
 
   row++;
+  let tds = document.getElementById('display').getElementsByTagName('th');
+            var sum = 0;
+            for(var i = 0; i < tds.length; i ++) {
+                if(tds[i].className == 'count-me') {
+                    sum += isNaN(tds[i].innerHTML) ? 0 : parseInt(tds[i].innerHTML);
+                }
+            }
+            document.getElementById('display').innerHTML += '<tr><td>Total</td><td>' + sum + '</td><td>' + sum + '</td><td>' + sum + '</td></tr>';
 
 }
 function displayDetails2(){
@@ -55,4 +64,13 @@ function displayDetails2(){
   cell4.innerHTML = ediff;
 
   row2++;
-}
+
+var tds = document.getElementById('display2').getElementsByTagName('th');
+            var sum = 0;
+            for(var i = 0; i < tds.length; i ++) {
+                if(tds[i].className == 'count-me') {
+                    sum += isNaN(tds[i].innerHTML) ? 0 : parseInt(tds[i].innerHTML);
+                }
+            }
+            document.getElementById('display2').innerHTML += '<tr><td>Total</td><td>' + sum + '</td><td>' + sum + '</td><td>' + sum + '</td></tr>';
+          }
