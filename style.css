@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-color:palegoldenrod;
+  /* Radial gradient background - css3*/
+  background: radial-gradient(rgba(179, 255, 255, .3), rgba(255, 255, 255, .5),
+  rgba(0,0,0, 0.5));
+  text-align: center;
+}
+
+h1 {
+  margin-top: 50px;
+}
+#nameDiv{
+  margin-top: 50px;
+}
+#expenseContainer{
+  margin-top: 30px;
+}
+.input {
+  font-size: 25px;
+  color: #486d48;
+  font-weight: 700;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+#entry1, #entry2, #entry3 {
+margin-top: 10px;
+padding: 2px;
+width: 160px;
+height: 40px;
+font-size: 23px;
+font-family: 'Times New Roman', Times, serif;
+background-color: sandybrown;
+color: whitesmoke;
+box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.4);
+}
+
+table {
+  border-collapse: collapse;
+  width: 50%;
+  margin: 20px auto;
+  background-color: burlywood;
+}
+
+table, th, td {
+  border: 2px solid black;
+  padding: 5px;
+}
+
+th {
+  font-size: 25px;
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #102e10
+
+}
+td {
+  font-size: 20px;
+  color: crimson;
+  font-weight: 400;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#income {
+  margin-top: 10px;
+  font-size: 25px;
+  color: black;
+  font-weight: 400;
+  font-family: Arial, Helvetica, sans-serif;
+
+}

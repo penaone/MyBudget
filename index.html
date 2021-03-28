@@ -9,53 +9,52 @@
 </head>
 
 <body>
+  <caption><b><h1>My Budget</h1></b></caption>
+    <iframe src="https://www.youtube.com/embed/4Eh8QLcB1UQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" poster="thumbnail.jpg" allowfullscreen></iframe>
+
   <div id="container">
     <div id="incomeContainer">
-      <div id="nameDiv" class="input">Name: <input id="name" type="text"
+      <div id="nameDiv" class="input">Income Name: <input id="iname" type="text"
+      placeholder="John paycheck"/></div>
+      <div  class="input">Amount: <input id="incAmount" type="text"
       placeholder="Income"/></div>
-      <div id="amountDiv" class="input">Amount: <input id="name" type="text"
-      placeholder="Expense"/></div>
+      <div  class="input">Actual Amount: <input id="incActual" type="text"
+        placeholder="Amount"/></div>
+      <button id="entry1">Submit Income</button>
     </div>
     <div id="expenseContainer">
-      <div id="nameDiv" class="input">Name: <input id="name" type="text"
-        placeholder="Expense"/></div>
-        <div id="amountDiv" class="input">Amount: <input id="name" type="text"
-          placeholder="Expense"/></div>
+      <div  class="input">Expense Name: <input id="ename" type="text"
+        placeholder="Groceries"/></div>
+      <div  class="input">Amount: <input id="expAmount" type="text"
+          placeholder="Amount"/></div>
+      <div  class="input">Actual Amount: <input id="expActual" type="text"
+            placeholder="Amount"/></div>
+          <button id="entry2">Submit Expense</button>
     </div>
+   
     
   </div>
-  
-    <caption><b><h1>My Budget</h1></b></caption>
-    <iframe src="https://www.youtube.com/embed/4Eh8QLcB1UQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" poster="thumbnail.jpg" allowfullscreen></iframe>
-    <table>
+
+    <div id="income">Income</div>
+    <table id="display">
 <tr>
 <th>Budget Categories</th>
-<th>Name</th>
-<th>Amount</th>
+<th>Budget Amount</th>
+<th>Actual Amount</th>
+<th>Difference</th>
 </tr>
-<tr>   
-    
-    <td> Income </td></tr>
-    <tr>
-      <td></td>    
-    <td><input type="text" placeholder="Income source"/></td>
-    <td><input type = "decimal" placeholder="Amount"></td>
-         
-    </tr>
 
-    <tr>
-      <td>Expenses</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td><input type="text" id="expense" placeholder="Expense" /></td>
-      <td><input type ="decimal" placeholder="Amount Monthly"/></td>
-    </tr>
-    <tr>
-      <td></td>
-      <td><input id="text" type="text" /></td>
-      <td><input type ="decimal" /></td>
-    </tr>
+  </table>
+
+  <div id="income">Expenses</div>
+    <table id="display2">
+<tr>
+<th>Budget Categories</th>
+<th>Budget Amount</th>
+<th>Actual Amount</th>
+<th>Difference</th>
+</tr>
+
   </table>
   
 </body>
