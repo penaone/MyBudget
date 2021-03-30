@@ -10,6 +10,7 @@ function displayDetails1(){
   var iamount = document.getElementById("incAmount").value;
   var iactual = document.getElementById("incActual").value;
   var idiff = (iamount-iactual);
+  var idelete = <input type="button" value="Delete" onclick="deleteRow(this)"></input>
   if (!iname || !iamount || !iactual) {
     alert("Please enter a value. (even zero)");
     return;
@@ -22,11 +23,13 @@ function displayDetails1(){
   var cell2 = newRow.insertCell(1);
   var cell3 = newRow.insertCell(2);
   var cell4 = newRow.insertCell(3);
+  var cell5 = newRow.insertCell(4);
   
   cell1.innerHTML = iname;
   cell2.innerHTML = iamount;
   cell3.innerHTML = iactual;
   cell4.innerHTML = idiff;
+  cell5.innerHTML = idelete;
 
 
   row++;
@@ -45,6 +48,7 @@ function displayDetails2(){
   var eamount = document.getElementById("expAmount").value;
   var eactual = document.getElementById("expActual").value;
   var ediff = (eamount-eactual)
+  var edelete = <input type="button" value="Delete" onclick="deleteRow(this)"></input>
   if (!ename || !eamount || !eactual) {
     alert("Please enter a value. (even zero)");
     return;
@@ -57,11 +61,13 @@ function displayDetails2(){
   var cell2 = newRow.insertCell(1);
   var cell3 = newRow.insertCell(2);
   var cell4 = newRow.insertCell(3);
+  var cell5 = newRow.insertCell(4);
 
   cell1.innerHTML = ename;
   cell2.innerHTML = eamount;
   cell3.innerHTML = eactual;
   cell4.innerHTML = ediff;
+  cell5.innerHTML = edelete;
 
   row2++;
 
@@ -73,4 +79,9 @@ var tds = document.getElementById('display2').getElementsByTagName('th');
                 }
             }
             document.getElementById('display2').innerHTML += '<tr><td>Total</td><td>' + sum + '</td><td>' + sum + '</td><td>' + sum + '</td></tr>';
+          }
+
+          function deleteRow(r) {
+            var i = r.parentNode.parentNode.rowIndex;
+            document.getElementById("row1").deleteRow(i);
           }
